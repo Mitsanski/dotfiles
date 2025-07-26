@@ -1,0 +1,10 @@
+corner-radius = 12;
+
+# Enable shadows, fades, etc. (optional)
+shadow = true;
+shadow-radius = 7;
+shadow-opacity = 0.3;
+
+# Experimental backend with vsync (optional but recommended)
+backend = "glx";
+vsync = true;

@@ -22,7 +22,7 @@ font pango:JetBrainsMono Nerd Font 12
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i4
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper-macos.jpeg
 exec_always --no-startup-id sh -c "{ killall -q polybar; polybar mybar & }"
 bindsym Print exec --no-startup-id flameshot gui
 
@@ -32,9 +32,8 @@ gaps outer 7
 gaps inner 7
 exec_always --no-startup-id picom --config ~/.config/picom.conf --vsync
 bindsym $mod+d exec --no-startup-id nautilus
-
-# Set initial layouts
-exec_always --no-startup-id setxkbmap -layout us,bg -variant ,phonetic -option grp:alt_shift_toggle
+bindsym $mod+b exec --no-startup-id brave-browser
+exec_always --no-startup-id setxkbmap -layout us,bg -variant ,phonetic -option grp:lalt_shift_toggle
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
